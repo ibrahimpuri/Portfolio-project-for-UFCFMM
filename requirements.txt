@@ -1,0 +1,8 @@
+# Environment that produced every figure and number in UFCFMM_Churn_Portfolio.ipynb
+# (results are seeded, but random-forest metrics can shift between scikit-learn releases)
+numpy==2.5.1
+pandas==3.0.3
+scikit-learn==1.9.0
+matplotlib==3.11.1
+seaborn==0.13.2
+notebook
