@@ -20,18 +20,19 @@ Headline results:
 |---|---|
 | `UFCFMM_Churn_Portfolio.ipynb` | The full analysis — narrative, code and outputs |
 | `Telco-Customer-Churn.csv` | The dataset ([IBM sample data](https://github.com/IBM/telco-customer-churn-on-icp4d)) |
+| `requirements.txt` | Pinned library versions used to produce the results |
 | `README.md` | This file |
 
 ## Running it
 
-Python 3.10+ with `pandas`, `scikit-learn`, `matplotlib` and `seaborn`:
+Python 3.10+:
 
 ```
-pip install pandas scikit-learn matplotlib seaborn
+pip install -r requirements.txt
 jupyter notebook UFCFMM_Churn_Portfolio.ipynb
 ```
 
-Everything is seeded (`SEED = 42`), so a full re-run reproduces every figure and number in the notebook. The CSV needs to sit in the same directory as the notebook.
+Everything is seeded (`SEED = 42`), so a full re-run on the pinned versions reproduces every figure and number in the notebook (the setup cell prints the versions in use). Random-forest metrics can vary slightly across scikit-learn releases, which is why the versions are pinned. The CSV needs to sit in the same directory as the notebook.
 
 ## Notes
 
